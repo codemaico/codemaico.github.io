@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Proxima Nova,Helvetica,Arial,sans-serif;
+}
+
+     
+          /* navbar */
+
+
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #38003c;
+    height: 16vh;
+    width: 100%;
+    text-align:right;
+    box-shadow: 5px 5px 10px gray;
+    z-index: 3;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 30px 30px 30px 20px;
+    font-size: 24px;
+    margin: 5px 5px 5px 5px;
+}
+.logo{
+    float: left;
+    position:absolute;
+    margin:10px 15px 15px 10px;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+}
+
+.navbar ul li a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s;
+    display: block;
+}
+.navbar a:hover{
+    cursor: pointer;
+    background: #EAFF04 ;
+    color: #38003c;
+    padding: 10px;
+    border-radius: 90% 30% 90% 30%;
+}
+
+   /* history section */
+
+.history{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+.history span{
+    background-color: #EAFF04;
+    background-size: 100%;
+    background-image: linear-gradient(90deg,#38003c, #eaff04,#38003c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+.history span:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+.history p{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 1.5;
+}
+.history .intro{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 5px;
+}
+.history h1{
+    font-size: 3rem;
+    padding-top: 60px;
+    font-weight: bold;
+}
+.history img{
+    width: 80%;
+    height: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+                   /* fixtures*/
+
+.fixtures .month{
+    width: 50%;
+    height: 60%;
+    text-align: left;
+    background: rgba(202, 200, 200, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.december{
+    margin-top: 20px;
+}
+.january{
+    margin-top: 20px;
+}
+.february{
+    margin-top: 20px;
+}
+.march{
+    margin-top: 20px;
+}
+.april{
+    margin-top: 20px;
+}
+.may{
+    margin-top: 20px;
+}
+.fixtures h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fixtures h4{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.fixtures p{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+           /*   conclusion part     */
+
+
+.conclusion p{
+    padding-top: 5px;
+}          
+
